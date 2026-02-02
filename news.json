@@ -1,0 +1,74 @@
+{
+  "last_update": "2026-02-02T17:26:12.282802",
+  "categories": [
+    {
+      "id": "terbaru",
+      "title": "Trending",
+      "items": [
+        {
+          "source": "CNBC Indonesia",
+          "icon": "https://www.cnbcindonesia.com/favicon.ico",
+          "title": "Ini 3 Negara Penyumbang Surplus RI di 2025",
+          "link": "https://www.cnbcindonesia.com/news/20260202170758-4-707499/ini-3-negara-penyumbang-surplus-ri-di-2025",
+          "image": "https://akcdn.detik.net.id/visual/2024/09/26/suasana-aktivitas-bongkar-muat-peti-kemas-di-pelabuhan-tanjung-priok-jakarta-kamis-2692024-cnbc-indonesiafaisal-rahman-3_43.jpeg?w=200&q=90"
+        },
+        {
+          "source": "Cakaplah",
+          "icon": "https://cakaplah.com/favicon.ico",
+          "title": "Kejari Siak Sudah Periksa 40 Saksi Dugaan Suap Pengaturan Proyek, Tahap Penyidikan Semakin Dekat",
+          "link": "https://cakaplah.com/berita/baca/132635/2026/02/02/kejari-siak-sudah-periksa-40-saksi-dugaan-suap-pengaturan-proyek-tahap-penyidikan-semakin-dekat/",
+          "image": "/assets/news/02022026/cakaplahcom_g4uu5_132635.jpg"
+        },
+        {
+          "source": "Viva",
+          "icon": "https://www.viva.co.id/favicon.ico",
+          "title": "Ada Game Gratis Baru di Steam 2026, Jangan Sampai Terlewatkan!",
+          "link": "https://www.viva.co.id/gaya-hidup/games/1877782-ada-game-gratis-baru-di-steam-2026-jangan-sampai-terlewatkan",
+          "image": "https://via.placeholder.com/400x225?text=No+Image"
+        },
+        {
+          "source": "Metro TV News",
+          "icon": "https://www.metrotvnews.com/favicon.ico",
+          "title": "Saksi Akui Terima USD30 Ribu dalam Korupsi Chromebook Nadiem",
+          "link": "https://www.metrotvnews.com/read/N6GCVAvM-saksi-akui-terima-usd30-ribu-dalam-korupsi-chromebook-nadiem",
+          "image": "https://cdn25.metrotvnews.com/dynamic/content/2026/02/02/N6GCVAvM/t_69806d971acf2.webp?w=800"
+        },
+        {
+          "source": "Okezone",
+          "icon": "https://cdn.okezone.com/favicon.ico",
+          "title": "Prabowo Bicara Ancaman Perang Dunia Ketiga: Kita Tidak Akan Ikut Pakta Militer Manapun!",
+          "link": "https://news.okezone.com/",
+          "image": "https://img.okezone.com/okz/400/content/2026/02/02/337/3199087/polri-OnKq_large.jpg"
+        },
+        {
+          "source": "Kompas",
+          "icon": "https://asset.kompas.com/data/2020/images/kompas-icon.png",
+          "title": "Harga Emas Antam Hari Ini 2 Februari 2026: Cek Rinciannya",
+          "link": "http://money.kompas.com/read/2026/02/02/062127826/harga-emas-antam-hari-ini-2-februari-2026-cek-rinciannya",
+          "image": "https://asset.kompas.com/crops/t_9d6TsD2S-1L_JcO3KMlONOmyg=/97x160:1057x800/107x70/data/photo/2025/06/20/6854f3e28304f.jpg"
+        },
+        {
+          "source": "Detik",
+          "icon": "https://www.detik.com/favicon.ico",
+          "title": "Adik Kecewa Denada Disudutkan, Pertanyakan Sosok Ayah Ressa Rizky",
+          "link": "https://hot.detik.com/celeb/d-8337016/adik-kecewa-denada-disudutkan-pertanyakan-sosok-ayah-ressa-rizky",
+          "image": "https://akcdn.detik.net.id/community/media/visual/2026/02/02/enrico-tambunan-1770022024110_43.png?w=220&q=90"
+        },
+        {
+          "source": "Liputan 6",
+          "icon": "https://cdn.medcom.id/images/icon/favicon.ico",
+          "title": "Berita Populer",
+          "link": "https://www.liputan6.com/bisnis/read/6269764/harga-emas-hari-ini-2-februari-2026-kembali-anjlok-sentuh-level-ini",
+          "image": "https://cdn-production-assets-kly.akamaized.net/assets/images/blank.png"
+        },
+        {
+          "source": "Detik",
+          "icon": "https://www.detik.com/favicon.ico",
+          "title": "IHSG Anjlok di Luar Prediksi, Purbaya Buka Suara",
+          "link": "https://finance.detik.com/bursa-dan-valas/d-8337137/ihsg-anjlok-di-luar-prediksi-purbaya-buka-suara",
+          "image": "https://akcdn.detik.net.id/community/media/visual/2025/12/31/purbaya-tak-bisa-tidur-jelang-tutup-buku-apbn-2025-1767186785962_43.jpeg?w=220&q=90"
+        }
+      ]
+    }
+  ]
+}
