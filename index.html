@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>International News</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+    }
+
+    /* ─── Hero ─── */
+    .hero-img {
+      margin-top: 100px;
+      max-width: 80%;
+      height: auto;
+    }
+
+    .hero-text {
+      margin-top: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    /* ─── News Section ─── */
+    .news-section {
+      margin: 40px auto 60px;
+      max-width: 1200px;
+      padding: 0 16px;
+    }
+
+    .news-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .news-header .line {
+      flex: 1;
+      max-width: 100px;
+      height: 2px;
+      background: rgba(255,255,255,0.6);
+      border-radius: 1px;
+    }
+
+    .news-header h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      white-space: nowrap;
+    }
+
+    /* ─── Filter Tabs ─── */
+    .tab-bar {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      background: rgba(255,255,255,0.2);
+      border: 2px solid rgba(255,255,255,0.4);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 10px 24px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      outline: none;
+      backdrop-filter: blur(10px);
+    }
+
+    .tab-btn:hover {
+      background: rgba(255,255,255,0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .tab-btn.active {
+      background: #fff;
+      color: #667eea;
+      border-color: #fff;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+
+    /* ─── Grid ─── */
+    .news-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 600px) {
+      .news-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (min-width: 900px) {
+      .news-grid { grid-template-columns: 1fr 1fr 1fr; }
+    }
+
+    /* ─── Card ─── */
+    .news-card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .news-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+
+    .news-card a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-img-wrap {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(135deg, #e0e0e0 0%, #c0c0c0 100%);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .news-card:hover .card-img-wrap img {
+      transform: scale(1.05);
+    }
+
+    /* Source badge */
+    .source-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Badge colors */
+    .badge-bbc       { background: rgba(187, 18, 29, 0.9); }
+    .badge-cnn       { background: rgba(204, 0, 0, 0.9); }
+    .badge-reuters   { background: rgba(255, 90, 0, 0.9); }
+    .badge-guardian  { background: rgba(0, 84, 166, 0.9); }
+    .badge-aljazeera { background: rgba(212, 154, 51, 0.9); }
+    .badge-ap        { background: rgba(227, 6, 19, 0.9); }
+    .badge-bloomberg { background: rgba(0, 0, 0, 0.85); }
+    .badge-cnbc      { background: rgba(0, 115, 172, 0.9); }
+
+    /* Category tag */
+    .cat-tag {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 10px;
+      font-weight: 700;
+      color: #fff;
+      padding: 3px 8px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      backdrop-filter: blur(10px);
+    }
+    .cat-world      { background: rgba(0, 100, 200, 0.85); }
+    .cat-business   { background: rgba(0, 140, 80, 0.85); }
+    .cat-technology { background: rgba(156, 39, 176, 0.85); }
+
+    .card-body {
+      padding: 18px 20px 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-body h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1a1a1a;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .news-card:hover .card-body h3 {
+      color: #667eea;
+    }
+
+    /* Status / Loading */
+    .news-status {
+      color: #fff;
+      font-size: 16px;
+      padding: 40px 0;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      border: 3px solid rgba(255,255,255,0.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Footer info */
+    .info-footer {
+      color: rgba(255,255,255,0.8);
+      font-size: 13px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <img class="hero-img"
+       src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSpSjp0NZYc4ovyoeokSi5GLB91aZB3xS_MoARChzzNgBoMHu4U1GsbnXOTdx7Llf8pur0K6MRbKPV4Pmz3wjXK5_9NCfmi86h0tR-1qYymB16ILppoimNOCsDSLXefjDRaUrkLgrJdX6VTNkhpKL-kGsEaZzpigsxSrYq-zdGg4xNVIvGGNL2O7R4quw/s800/5c0f6834e0f766121ee18a619243debc.gif"
+       alt="Hero Image">
+  <p class="hero-text">Global News Hub</p>
+
+  <!-- News Section -->
+  <section class="news-section">
+    <div class="news-header">
+      <span class="line"></span>
+      <h2>🌍 Latest International News</h2>
+      <span class="line"></span>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="tab-bar">
+      <button class="tab-btn active" data-filter="all">📰 All</button>
+      <button class="tab-btn"        data-filter="world">🌍 World</button>
+      <button class="tab-btn"        data-filter="business">💼 Business</button>
+      <button class="tab-btn"        data-filter="technology">💻 Technology</button>
+    </div>
+
+    <div id="news-container">
+      <p class="news-status"><span class="spinner"></span>Loading news...</p>
+    </div>
+  </section>
+
+  <div class="info-footer">
+    Sources: BBC News · CNN · Reuters · The Guardian · Al Jazeera · AP News · Bloomberg · CNBC
+  </div>
+
+  <script>
+  // ─── API URL ───
+  const API_URL = "https://maxb.pythonanywhere.com/api/news";
+
+  let allArticles = [];
+  let currentFilter = "all";
+
+  // ─── Badge class mapping ───
+  function getBadgeClass(source) {
+    const map = {
+      "bbc news"     : "badge-bbc",
+      "cnn"          : "badge-cnn",
+      "reuters"      : "badge-reuters",
+      "the guardian" : "badge-guardian",
+      "al jazeera"   : "badge-aljazeera",
+      "ap news"      : "badge-ap",
+      "bloomberg"    : "badge-bloomberg",
+      "cnbc"         : "badge-cnbc",
+    };
+    return map[source.toLowerCase()] || "badge-bbc";
+  }
+
+  // ─── Render cards ───
+  function renderCards(articles) {
+    const container = document.getElementById("news-container");
+
+    if (articles.length === 0) {
+      container.innerHTML = '<p class="news-status">No articles found for this category.</p>';
+      return;
+    }
+
+    let html = '<div class="news-grid">';
+    articles.forEach(art => {
+      const badgeClass = getBadgeClass(art.source);
+      const cat        = (art.category || "world").toLowerCase();
+      const catClass   = `cat-${cat}`;
+      const catLabel   = cat.charAt(0).toUpperCase() + cat.slice(1);
+
+      html += `
+        <article class="news-card">
+          <a href="${art.link}" target="_blank" rel="noopener noreferrer">
+            <div class="card-img-wrap">
+              <img src="${art.image}" alt="${art.title}" loading="lazy"
+                   onerror="this.style.display='none'">
+              <span class="source-badge ${badgeClass}">${art.source}</span>
+              <span class="cat-tag ${catClass}">${catLabel}</span>
+            </div>
+            <div class="card-body">
+              <h3>${art.title}</h3>
+            </div>
+          </a>
+        </article>`;
+    });
+    html += '</div>';
+    container.innerHTML = html;
+  }
+
+  // ─── Apply filter ───
+  function applyFilter() {
+    if (currentFilter === "all") {
+      renderCards(allArticles);
+    } else {
+      renderCards(allArticles.filter(a => (a.category || "").toLowerCase() === currentFilter));
+    }
+  }
+
+  // ─── Tab click handler ───
+  document.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentFilter = btn.dataset.filter;
+      applyFilter();
+    });
+  });
+
+  // ─── Fetch news ───
+  async function loadNews() {
+    const container = document.getElementById("news-container");
+    container.innerHTML = '<p class="news-status"><span class="spinner"></span>Loading news...</p>';
+
+    try {
+      const res      = await fetch(API_URL + "?t=" + Date.now());
+      const data     = await res.json();
+      allArticles    = data.articles || [];
+
+      if (allArticles.length === 0) {
+        container.innerHTML = '<p class="news-status">No news available at the moment.</p>';
+        return;
+      }
+
+      applyFilter();
+
+    } catch (err) {
+      container.innerHTML =
+        '<p class="news-status">⚠️ Failed to load news.<br>' +
+        'Please check if the API server is running.</p>';
+      console.error("Fetch error:", err);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", loadNews);
+  </script>
+
+</body>
+</html>
