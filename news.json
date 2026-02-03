@@ -1,0 +1,74 @@
+{
+  "last_update": "2026-02-03T16:47:13.851083",
+  "categories": [
+    {
+      "id": "nasional",
+      "title": "Nasional",
+      "items": [
+        {
+          "source": "Metro TV News",
+          "icon": "https://www.metrotvnews.com/favicon.ico",
+          "title": "Istana Bantah Presiden Prabowo Gunakan 2 Pesawat Kenegaraan",
+          "link": "https://www.metrotvnews.com/read/NG9Cz9RX-istana-bantah-presiden-prabowo-gunakan-2-pesawat-kenegaraan",
+          "image": "https://cdn25.metrotvnews.com/dynamic/content/2026/02/03/NG9Cz9RX/t_6981a25e4a0d3.webp?w=800"
+        },
+        {
+          "source": "SINDOnews",
+          "icon": "https://www.sindonews.com/favicon.ico",
+          "title": "Indonesia dan Slovakia Sepakati Perjanjian Bebas Visa bagi Pemegang Paspor Diplomatik dan Dinas",
+          "link": "https://nasional.sindonews.com/read/1673005/15/indonesia-dan-slovakia-sepakati-perjanjian-bebas-visa-bagi-pemegang-paspor-diplomatik-dan-dinas-1770102165",
+          "image": "https://e.sindonews.net/mobile/2016/images/pre-images-light.png"
+        },
+        {
+          "source": "Tribun News",
+          "icon": "https://cdn-2.tstatic.net/tribunnews/img/favicon.ico",
+          "title": "Pandji Pragiwaksono Akan Diperiksa Atas Lima Perkara yang Dilaporkan ke Polda Metro Jaya",
+          "link": "https://www.tribunnews.com/topic/Komika-Pandji-Pragiwaksono",
+          "image": "https://asset.tribunnews.com/Ylg803uz-qwiWgFAXD20rajsDto=/650x365/filters:quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Komika-Pandji-Pragiwaksono-memenuhi-panggilan-Bareskrim.jpg"
+        },
+        {
+          "source": "BBC Indonesia",
+          "icon": "https://static.files.bbci.co.uk/core/website/assets/static/icons/favicon.ico",
+          "title": "Sembilan pengunjuk rasa di Bandung divonis bersalah terkait demo Agustus 2025 – 'Jangan berhenti suarakan hak kalian'",
+          "link": "https://www.bbc.com/indonesia/articles/c17zj1zkl2yo",
+          "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/3a1e/live/154ed910-003d-11f1-a18d-b15f01569129.jpg.webp"
+        },
+        {
+          "source": "Liputan 6",
+          "icon": "https://cdn.medcom.id/images/icon/favicon.ico",
+          "title": "Jawa Tengah - DIY03 Feb 2026 16:32Satpol PP Kebumen Meninggal Dibacok ODGJ Ngamuk, Korban Alami Luka Parah di Leher",
+          "link": "https://www.liputan6.com/regional/read/6271090/satpol-pp-kebumen-meninggal-dibacok-odgj-ngamuk-korban-alami-luka-parah-di-leher",
+          "image": "https://cdn-production-assets-kly.akamaized.net/assets/images/blank.png"
+        },
+        {
+          "source": "Cakaplah",
+          "icon": "https://cakaplah.com/favicon.ico",
+          "title": "Pemprov Riau Targetkan Realisasi Investasi 2026 Sebesar Rp89,8 Triliun",
+          "link": "https://cakaplah.com/berita/baca/132670/2026/02/03/pemprov-riau-targetkan-realisasi-investasi-2026-sebesar-rp898-triliun/",
+          "image": "/assets/news/03022026/cakaplahcom_6kzeg_132670.jpeg"
+        },
+        {
+          "source": "Detik",
+          "icon": "https://www.detik.com/favicon.ico",
+          "title": "Banding, Hukuman Hakim Djuyamto Diperberat Jadi 12 Tahun Penjara",
+          "link": "https://news.detik.com/berita/d-8338165/banding-hukuman-hakim-djuyamto-diperberat-jadi-12-tahun-penjara",
+          "image": "https://akcdn.detik.net.id/visual/2025/08/21/hakim-nonaktif-pn-jaksel-djuyamto-didakwa-menerima-uang-suap-rp-95-miliar-terkait-kasus-vonis-lepas-ekspor-minyak-goreng-migor-1755752106830_169.jpeg?w=250&q=90"
+        },
+        {
+          "source": "iNews",
+          "icon": "https://cdn.theorg.com/284617eb-78c1-494f-89aa-5873e6e66959_medium.jpg",
+          "title": "Polisi Ungkap Bahar bin Smith Turut Pukul Anggota Banser di Tangerang",
+          "link": "https://www.inews.id/news/nasional/polisi-ungkap-bahar-bin-smith-turut-pukul-anggota-banser-di-tangerang",
+          "image": "https://img.inews.co.id/media/600/files/inews_new/2026/02/01/pemuka_agama_habib_bahar_bin_smith_dok_inewsid.jpg"
+        },
+        {
+          "source": "CNN Indonesia",
+          "icon": "https://www.cnnindonesia.com/favicon.ico",
+          "title": "Peran Bahar bin Smith di Kasus Dugaan Penganiayaan Anggota Banser",
+          "link": "https://www.cnnindonesia.com/nasional/20260203153430-12-1324128/peran-bahar-bin-smith-di-kasus-dugaan-penganiayaan-anggota-banser",
+          "image": "https://via.placeholder.com/400x225?text=CNN"
+        }
+      ]
+    }
+  ]
+}
