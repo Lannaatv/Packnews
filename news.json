@@ -1,0 +1,67 @@
+{
+  "last_update": "2026-02-03T14:04:06.783291",
+  "categories": [
+    {
+      "id": "terbaru",
+      "title": "Trending",
+      "items": [
+        {
+          "source": "Liputan 6",
+          "icon": "https://cdn.medcom.id/images/icon/favicon.ico",
+          "title": "Berita Populer",
+          "link": "https://www.liputan6.com/bola/read/6269994/manchester-united-diminta-rekrut-gelandang-rp600-m-yang-pernah-jadi-anak-asuh-michael-carrick",
+          "image": "https://cdn-production-assets-kly.akamaized.net/assets/images/blank.png"
+        },
+        {
+          "source": "Okezone",
+          "icon": "https://cdn.okezone.com/favicon.ico",
+          "title": "Satgas PKH Usut Temuan PPATK Dana Tambang Emas Ilegal Rp992 T",
+          "link": "https://news.okezone.com/",
+          "image": "https://img.okezone.com/okz/400/content/2026/02/03/337/3199274/presiden_prabowo_subianto-m9eb_large.jpg"
+        },
+        {
+          "source": "Viva",
+          "icon": "https://www.viva.co.id/favicon.ico",
+          "title": "Pengakuan Jujur Maarten Paes usai Resmi Gabung Ajax: Saya Sangat Bangga",
+          "link": "https://www.viva.co.id/bola/1877980-pengakuan-jujur-maarten-paes-usai-resmi-gabung-ajax-saya-sangat-bangga",
+          "image": "https://via.placeholder.com/400x225?text=No+Image"
+        },
+        {
+          "source": "CNBC Indonesia",
+          "icon": "https://www.cnbcindonesia.com/favicon.ico",
+          "title": "Hancur Lebur! Rudal Iskander Rusia Bombardir Roket HIMARS AS",
+          "link": "https://www.cnbcindonesia.com/news/20260203131026-4-707737/hancur-lebur-rudal-iskander-rusia-bombardir-roket-himars-as",
+          "image": "https://akcdn.detik.net.id/visual/2026/02/03/sistem-roket-peluncuran-ganda-buatan-as-hancur-di-wilayah-kharkiv-demikian-dilaporkan-kementerian-pertahanan-rusia-1770075947025_43.png?w=200&q=90"
+        },
+        {
+          "source": "Cakaplah",
+          "icon": "https://cakaplah.com/favicon.ico",
+          "title": "Lapas Pekanbaru dan DLHK Kolaborasi Kelola Sampah Jadi Pupuk Organik",
+          "link": "https://cakaplah.com/berita/baca/132664/2026/02/03/lapas-pekanbaru-dan-dlhk-kolaborasi-kelola-sampah-jadi-pupuk-organik/",
+          "image": "/assets/news/03022026/cakaplahcom_zb6kv_132664.jpg"
+        },
+        {
+          "source": "Metro TV News",
+          "icon": "https://www.metrotvnews.com/favicon.ico",
+          "title": "Presiden Prabowo Kumpulkan 50 Tokoh Ormas Islam, Bahas Isu Dalam Negeri hingga Gaza",
+          "link": "https://www.metrotvnews.com/read/b2lC6oox-presiden-prabowo-kumpulkan-50-tokoh-ormas-islam-bahas-isu-dalam-negeri-hingga-gaza",
+          "image": "https://cdn25.metrotvnews.com/dynamic/content/2026/02/03/b2lC6oox/t_698186511b68b.webp?w=800"
+        },
+        {
+          "source": "Kompas",
+          "icon": "https://asset.kompas.com/data/2020/images/kompas-icon.png",
+          "title": "Awan Gelap Menanti Penjualan Smartphone 2026",
+          "link": "http://tekno.kompas.com/read/2026/02/03/10010007/awan-gelap-menanti-penjualan-smartphone-2026",
+          "image": "https://asset.kompas.com/crops/rZCPge7A-VClYH5wA5NlRmqgmhQ=/0x0:1500x1000/107x70/data/photo/2025/09/04/68b8e4f891d8b.jpg"
+        },
+        {
+          "source": "Detik",
+          "icon": "https://www.detik.com/favicon.ico",
+          "title": "Terungkap! Pemicu Boiyen Gugat Cerai Suami",
+          "link": "https://hot.detik.com/celeb/d-8338090/terungkap-pemicu-boiyen-gugat-cerai-suami",
+          "image": "https://akcdn.detik.net.id/community/media/visual/2025/12/24/boiyen-dan-suami-1766560446704_43.png?w=220&q=90"
+        }
+      ]
+    }
+  ]
+}
